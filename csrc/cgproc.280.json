@@ -1,0 +1,71 @@
+{
+    "Modules": {
+        "testbench": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "ddr_interface": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "out": "amcQw_d.o",
+            "archive": "archive.0/_280_archive_1.a",
+            "bytes": 4564
+        },
+        "reYIK_d": {
+            "mode": 4,
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "archive": "archive.0/_280_archive_1.a",
+            "bytes": 18556
+        },
+        "HCyFa_d": {
+            "mode": 4,
+            "mod": "ddr_interface",
+            "out": "HCyFa_d.o",
+            "archive": "archive.0/_280_archive_1.a",
+            "bytes": 8499
+        },
+        "iAVhC_d": {
+            "mode": 4,
+            "mod": "testbench",
+            "out": "iAVhC_d.o",
+            "archive": "archive.0/_280_archive_1.a",
+            "bytes": 23772
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_280_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    4564
+                ],
+                [
+                    "reYIK_d.o",
+                    18556
+                ],
+                [
+                    "HCyFa_d.o",
+                    8499
+                ],
+                [
+                    "iAVhC_d.o",
+                    23772
+                ]
+            ],
+            "size": 55391
+        }
+    ]
+}

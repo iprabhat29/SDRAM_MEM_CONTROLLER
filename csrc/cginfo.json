@@ -1,0 +1,56 @@
+{
+    "CompileStatus": "Successful",
+    "CompileProcesses": [
+        "cgproc.280.json"
+    ],
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "ddr_interface": [
+            "ddr_interface",
+            "HCyFa",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "testbench": [
+            "testbench",
+            "iAVhC",
+            "module"
+        ]
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 34527
+    },
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "PEModules": [],
+    "CurCompileModules": [
+        "...MASTER...",
+        "std",
+        "ddr_interface",
+        "testbench"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "Misc": {
+        "archive_dir": "archive.0",
+        "cwd": "/home/runner",
+        "default_output_dir": "csrc",
+        "daidir_abs": "/home/runner/simv.daidir",
+        "csrc": "csrc",
+        "csrc_abs": "/home/runner/csrc",
+        "daidir": "simv.daidir"
+    },
+    "stat": {
+        "nMops": 2586
+    }
+}

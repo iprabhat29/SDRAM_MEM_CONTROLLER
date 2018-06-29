@@ -1,0 +1,22 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "ddr_interface": [
+        "ddr_interface",
+        "HCyFa",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "testbench": [
+        "testbench",
+        "iAVhC",
+        "module"
+    ]
+}
