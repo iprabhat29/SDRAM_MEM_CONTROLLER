@@ -8,11 +8,11 @@ module testbench;
   bit SCLK_N = 1;
   
   
-  initial forever #10 CLK = ~CLK;
+  initial forever #5 CLK = ~CLK;
   
-    initial forever #20 SCLK = ~SCLK;
+    initial forever #10 SCLK = ~SCLK;
   
-      initial forever #20 SCLK_N = ~SCLK_N;
+      initial forever #10 SCLK_N = ~SCLK_N;
   
   ddr_interface inf(CLK,SCLK,SCLK_N);
   test t(inf);

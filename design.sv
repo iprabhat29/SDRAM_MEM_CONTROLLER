@@ -34,4 +34,26 @@
         cmd1 = 0;
         inf.DATAEND = 1;
         @(posedge inf.SCLK);
-        inf.DATAEND = 0;*/
+        inf.DATAEND = 0;
+        
+        
+        
+        
+  initial begin
+    @(inf.DATAIN);
+    temp [3:0] = inf.DATAIN;
+    @(inf.DATAIN);
+    temp [7:4] = inf.DATAIN;
+    @(inf.DATAIN);
+    temp [11:8] = inf.DATAIN;
+    @(inf.DATAIN);
+    temp [15:12] = inf.DATAIN;
+    @(inf.DATAIN);
+    temp [19:16] = inf.DATAIN;
+    @(inf.DATAIN);
+    temp [23:20] = inf.DATAIN;
+    @(inf.DATAIN);
+    temp [27:24] = inf.DATAIN;
+    @(inf.DATAIN);
+    temp [31:28] = inf.DATAIN;
+  end*/

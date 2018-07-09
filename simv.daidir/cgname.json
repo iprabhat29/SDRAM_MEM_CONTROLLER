@@ -9,14 +9,14 @@
         "HCyFa",
         "module"
     ],
-    "...MASTER...": [
-        "SIM",
-        "amcQw",
-        "module"
-    ],
     "testbench": [
         "testbench",
         "iAVhC",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
         "module"
     ]
 }

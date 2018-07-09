@@ -16,17 +16,18 @@ interface ddr_interface(input CLK,SCLK,SCLK_N);
   wire [15:0] DQ;
   logic [3:0] DQM;
   logic [15:0] DQS;
-  bit DATAEND = 0;
-  
-  modport UI_MC(input CLK,CMD,ADDR,DATAIN,DM,RESET_N,DATAEND,
+  bit R_DATAEND = 0;
+  bit W_DATAEND = 0;  
+  modport UI_MC(input CLK,CMD,ADDR,DATAIN,DM,RESET_N,R_DATAEND,W_DATAEND,
                 output CMDACK,DATAOUT,SA,BA,CS_N,CKE,RAS_N,CAS_N,WE_N,DQM,
                 inout DQ, DQS);
   
-  modport TEST(input CLK,DATAIN,CMDACK,
-               output RESET_N,DATAOUT,CMD,DM,ADDR);
+  modport TEST(input CLK,DATAOUT,CMDACK,
+               output RESET_N,DATAIN,CMD,DM,ADDR,W_DATAEND,R_DATAEND);
   
   modport SRAM(input SCLK,SCLK_N,SA,BA,CS_N,CKE,RAS_N,CAS_N,WE_N,
-              inout DQ,DQM,DATAEND);
+               output R_DATAEND,W_DATAEND,
+               inout DQ,DQM);
   
   modport MONITOR(input CKE,CLK,SCLK,SCLK_N,CMD,CMDACK,RAS_N,CAS_N,WE_N,DQ,DATAIN,DATAOUT,DQM,SA,BA,CS_N,ADDR);
   
